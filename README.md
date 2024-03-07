@@ -4,7 +4,7 @@
 
 > Neden kuruyorum? Proje katılmaya değer, vaktimi almadı, bir kaç dakikada kuruluyor.
 
-> Topluluk kanalları: [Twitter](https://twitter.com/Ruesandora0) - [Duyuru](https://t.me/RuesAnnouncement) - [Chat](https://t.me/RuesChat) - [WP](https://whatsapp.com/channel/0029VaBcj7V1dAw1H2KhMk34) 
+> Topluluk kanalları: [Twitter](https://twitter.com/Ruesandora0) - [Duyuru](https://t.me/RuesAnnouncement) - [Chat](https://t.me/RuesChat) - [WP](https://whatsapp.com/channel/0029VaBcj7V1dAw1H2KhMk34) - [Node soruları için](https://t.me/ruesshare/13003/13004) - [Waku Discord](https://discord.gg/4DBrFfyY)
 
 <h1 align="center"> Donanım </h1>
 
@@ -98,5 +98,14 @@ docker-compose up -d
 > `http://IP_ADRESİN:3000/d/yns_4vFVk/nwaku-monitoring`
 
 > IP_ADRESİN kısmını değiştirip google'da aratın.
+
+> Yedekleme için `keystore.json` dosyasını kaydedin.
+
+```console
+# Bu iki komutlada çıktı alıyorsanız sorun yoktur.
+curl --location 'http://127.0.0.1:8645/debug/v1/version'
+curl --location 'http://127.0.0.1:8645/debug/v1/info'
+```
+
 
 
