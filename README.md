@@ -51,6 +51,7 @@ nano .env
 ```console
 # ve register edelim.
 ./register_rln.sh
+# register etmeden önce cüzdanda sepolia eth olmalı
 ```
 
 <h1 align="center"> Waku node başlatma </h1>
