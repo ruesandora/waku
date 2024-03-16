@@ -108,5 +108,25 @@ curl --location 'http://127.0.0.1:8645/debug/v1/version'
 curl --location 'http://127.0.0.1:8645/debug/v1/info'
 ```
 
+<h1 align="center"> Güncelleme </h1>
+
+Öncelikle indirdiğimiz `nwaku-compose` reposunun içerisine gidip, çalışan contianerları durduruyoruz.
+
+```console
+cd ~/nwaku-compose
+docker-compose down
+```
+
+Reponun son sürümünü çekiyoruz (Güncellemenin main branchte olduğunu varsayıyoruz. Versiyon 0.25.0'dan 0.26.0'a geçerken main üzerinden güncellediler.)
+```console
+git pull
+```
+
+Dockerı yeniden ayağa kaldırıyoruz.
+```console
+docker-compose up -d
+```
+
+Logları ve Grafana'yı kontrol etmeyi unutmayınız. Güncelledikten sonra kapatıp yeniden açmayı denerseniz hata ile karşılaşıyorsunuz. Manual olarak `postgres:15.4-alpine3.18` containerı içerisine girip `public.messages_backup` tablosunu silmeniz gerekiyor. Bu sorun ile ilgili [bağlantı](https://github.com/waku-org/nwaku-compose/issues/75).
 
 
