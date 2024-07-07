@@ -130,8 +130,11 @@ docker-compose up -d
 Logları ve Grafana'yı kontrol etmeyi unutmayınız. Güncelledikten sonra kapatıp yeniden açmayı denerseniz hata ile karşılaşıyorsunuz. Manual olarak `postgres:15.4-alpine3.18` containerı içerisine girip `public.messages_backup` tablosunu silmeniz gerekiyor. Bu sorun ile ilgili [bağlantı](https://github.com/waku-org/nwaku-compose/issues/75).
 
 
-#Waku Port değiştirme.
-#Çalışan diğer node'lar da bazı portlar kullanıyor. Bende 8080 port sıkıntı oldu ve aşağıda anlattığım şekilde sorunu çözdüm. Sizler diğer portları da değiştirebilirsiniz.
+<h1 align="center"> Port değiştirme </h1>
+
+
+
+Çalışan diğer node'lar da bazı portlar kullanıyor. Bende 8080 port sıkıntı oldu ve aşağıda anlattığım şekilde sorunu çözdüm. Sizler diğer portları da değiştirebilirsiniz.
 
 nwaku-compose klasörüne giriyoruz
 ```console
